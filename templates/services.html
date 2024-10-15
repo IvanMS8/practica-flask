@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Servicios{% endblock %}
+
+{% block content %}
+    <section>
+        <h2>Nuestros Servicios</h2>
+        <div class="servicio">
+            <img src="{{ url_for('static', filename='servicio1.png') }}" alt="Servicio 1" height="80">
+            <p>Tenemos el mejor servicio de Software </p>
+        </div>
+        <div class="servicio">
+            <img src="{{ url_for('static', filename='servicio2.png') }}" alt="Servicio 2" height="80">
+            <p>Tenemos el mejor servicio de hardware </p>
+        </div>
+    </section>
+{% endblock %}

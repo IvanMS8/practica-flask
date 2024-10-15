@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Noticias{% endblock %}
+
+{% block content %}
+    <section>
+        <h2>Últimas Noticias</h2>
+        <article>
+            <h3>Título de la noticia 1</h3>
+            <img src="{{ url_for('static', filename='noticia1.png') }}" alt="Noticia 1" height="80">
+            <p>Elegidos coomo el mejor servicio de software y hardware.</p>
+        </article>
+    </section>
+{% endblock %}

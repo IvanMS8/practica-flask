@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mi Empresa{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Mi Empresa</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Inicio</a>
+            <a href="{{ url_for('about') }}">Quiénes Somos</a>
+            <a href="{{ url_for('services') }}">Servicios</a>
+            <a href="{{ url_for('news') }}">Noticias</a>
+            <a href="{{ url_for('contact') }}">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Empresa</p>
+    </footer>
+</body>
+</html>
